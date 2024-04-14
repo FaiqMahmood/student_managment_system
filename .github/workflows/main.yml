@@ -26,4 +26,4 @@ jobs:
 
       - name: Deploy to EC2
         run: |
-          ssh -o StrictHostKeyChecking=no -i ${{ secrets.SSH_PRIVATE_KEY }} ec2-user@35.171.22.218 'cd /home/ec2-user/apps/$EduTrack && git pull origin main && ./deploy_app.sh'
+          ssh -o StrictHostKeyChecking=no -i ${{ secrets.SSH_PRIVATE_KEY }} ec2-user@35.171.22.218 'cd /home/ec2-user/apps/EduTrack && git pull origin main && ./deploy_app.sh'
